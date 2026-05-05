@@ -1,5 +1,5 @@
-# See 'repos.txt.example' file
+# repos.txt – Download Zed via proxy/relay
 
-# Format: owner/repo|filter1|filter2|...
-# Filters are case‑insensitive regular expressions (grep -E).
-
+# Zed - Modern collaborative code editor from the creators of Atom
+# Official repo: https://github.com/zed-industries/zed
+zed-industries/zed|linux-x86_64|macos-universal|windows-x86_64
