@@ -165,6 +165,5 @@ sha256sum FILE_NAME
 
 | File | Size | Download |
 |------|------|----------|
-| `zed-remote-server-linux-x86_64.gz` | 35.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-remote-server-linux-x86_64.gz) |
-| `zed-remote-server-windows-x86_64.zip` | 31.9 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-remote-server-windows-x86_64.zip) |
+| `Zed-x86_64.exe` | 76.8 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/Zed-x86_64.exe) |
 <!-- RELEASES_END -->
