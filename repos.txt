@@ -1,5 +1,3 @@
-# repos.txt – Download Zed via proxy/relay
-
 # Zed - Modern collaborative code editor from the creators of Atom
 # Official repo: https://github.com/zed-industries/zed
-zed-industries/zed|linux-x86_64|macos-universal|windows-x86_64
+zed-industries/zed|Zed-x86_64\.exe|zed-linux-x86_64\.tar\.gz|zed-macos-universal\.dmg
