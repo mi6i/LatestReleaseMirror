@@ -157,5 +157,14 @@ sha256sum FILE_NAME
 
 
 <!-- RELEASES_START -->
+<div id="zed-industries--zed"></div>
 
+### zed-industries--zed
+
+🔗 [source](https://github.com/zed-industries/zed) – [<code><small>v1.0.1</small></code>](https://github.com/zed-industries/zed/releases/tag/v1.0.1)
+
+| File | Size | Download |
+|------|------|----------|
+| `zed-remote-server-linux-x86_64.gz` | 35.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-remote-server-linux-x86_64.gz) |
+| `zed-remote-server-windows-x86_64.zip` | 31.9 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-remote-server-windows-x86_64.zip) |
 <!-- RELEASES_END -->
