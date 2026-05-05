@@ -157,6 +157,21 @@ sha256sum FILE_NAME
 
 
 <!-- RELEASES_START -->
+<div id="gfw-knocker--mahsang"></div>
+
+### GFW-knocker--MahsaNG
+
+🔗 [source](https://github.com/GFW-knocker/MahsaNG) – [<code><small>v15-(1405-1-22)</small></code>](https://github.com/GFW-knocker/MahsaNG/releases/tag/v15-(1405-1-22))
+
+| File | Size | Download |
+|------|------|----------|
+| `MahsaNG_15_arm64-v8a.apk` | 51.7 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_arm64-v8a.apk) |
+| `MahsaNG_15_armeabi-v7a.apk` | 52.3 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_armeabi-v7a.apk) |
+| `MahsaNG_15_x86.apk` | 55.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_x86.apk) |
+| `MahsaNG_15_x86_64.apk` | 54.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_x86_64.apk) |
+
+---
+
 <div id="zed-industries--zed"></div>
 
 ### zed-industries--zed
