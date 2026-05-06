@@ -185,6 +185,25 @@ sha256sum FILE_NAME
 
 ---
 
+<div id="nullroute1970--stormdns"></div>
+
+### nullroute1970--StormDNS
+
+🔗 [source](https://github.com/nullroute1970/StormDNS) – [<code><small>v2026.04.26.153956-15aedd9</small></code>](https://github.com/nullroute1970/StormDNS/releases/tag/v2026.04.26.153956-15aedd9)
+
+| File | Size | Download |
+|------|------|----------|
+| `StormDNS_Client_Linux_AMD64.tar.gz` | 3.5 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Linux_AMD64.tar.gz) |
+| `StormDNS_Client_Linux_AMD64.zip` | 3.5 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Linux_AMD64.zip) |
+| `StormDNS_Client_Windows_AMD64.zip` | 3.9 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Windows_AMD64.zip) |
+| `StormDNS_Client_Windows_X86.zip` | 3.8 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Windows_X86.zip) |
+| `StormDNS_Server_Linux_AMD64.tar.gz` | 3.2 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Linux_AMD64.tar.gz) |
+| `StormDNS_Server_Linux_AMD64.zip` | 3.2 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Linux_AMD64.zip) |
+| `StormDNS_Server_Windows_AMD64.zip` | 3.6 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Windows_AMD64.zip) |
+| `StormDNS_Server_Windows_X86.zip` | 3.5 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Windows_X86.zip) |
+
+---
+
 <div id="zed-industries--zed"></div>
 
 ### zed-industries--zed
