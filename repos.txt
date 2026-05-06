@@ -1,6 +1,13 @@
+# repos.txt – Download Zed, MahsaNG & AppManager via proxy/relay
+
 # Zed - Modern collaborative code editor from the creators of Atom
 # Official repo: https://github.com/zed-industries/zed
 zed-industries/zed|Zed-x86_64\.exe|zed-linux-x86_64\.tar\.gz|zed-macos-universal\.dmg
 
+# MahsaNG - Free & open-source internet freedom tool
 # Official repo: https://github.com/GFW-knocker/MahsaNG
 GFW-knocker/MahsaNG|MahsaNG_.*\.apk
+
+# AppManager - Android package manager and app ops frontend
+# Official repo: https://github.com/MuntashirAkon/AppManager
+MuntashirAkon/AppManager|AppManager_.*\.apk
