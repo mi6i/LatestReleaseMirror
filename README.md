@@ -172,6 +172,19 @@ sha256sum FILE_NAME
 
 ---
 
+<div id="muntashirakon--appmanager"></div>
+
+### MuntashirAkon--AppManager
+
+🔗 [source](https://github.com/MuntashirAkon/AppManager) – [<code><small>v4.0.5</small></code>](https://github.com/MuntashirAkon/AppManager/releases/tag/v4.0.5)
+
+| File | Size | Download |
+|------|------|----------|
+| `AppManager_v4.0.5.apk` | 25.7 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/MuntashirAkon/AppManager/AppManager_v4.0.5.apk) |
+| `AppManager_v4.0.5.apks` | 22.4 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/MuntashirAkon/AppManager/AppManager_v4.0.5.apks) |
+
+---
+
 <div id="zed-industries--zed"></div>
 
 ### zed-industries--zed
