@@ -18,4 +18,4 @@ nullroute1970/StormDNS|Linux_AMD64|Windows_AMD64|Windows_X86
 
 # Anytype - Local-first, private knowledge management app
 # Official repo: https://github.com/anyproto/anytype-ts
-anyproto/anytype-ts|Anytype.Setup
+anyproto/anytype-ts
