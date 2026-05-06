@@ -11,3 +11,7 @@ GFW-knocker/MahsaNG|MahsaNG_.*\.apk
 # AppManager - Android package manager and app ops frontend
 # Official repo: https://github.com/MuntashirAkon/AppManager
 MuntashirAkon/AppManager|AppManager_.*\.apk
+
+# Anytype - Local-first, private knowledge management app
+# Official repo: https://github.com/anyproto/anytype-ts
+anyproto/anytype-ts|Anytype Setup.*\.exe
