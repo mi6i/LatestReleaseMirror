@@ -208,9 +208,12 @@ sha256sum FILE_NAME
 
 ### zed-industries--zed
 
-🔗 [source](https://github.com/zed-industries/zed) – [<code><small>v1.1.5</small></code>](https://github.com/zed-industries/zed/releases/tag/v1.1.5)
+🔗 [source](https://github.com/zed-industries/zed) – [<code><small>v1.1.6</small></code>](https://github.com/zed-industries/zed/releases/tag/v1.1.6)
 
 | File | Size | Download |
 |------|------|----------|
-| `Zed-x86_64.exe` | 77.8 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/Zed-x86_64.exe) |
+| `Zed-x86_64.exe` | 77.7 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/Zed-x86_64.exe) |
+| `zed-linux-x86_64.tar.gz.z01` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-linux-x86_64.tar.gz.z01) |
+| `zed-linux-x86_64.tar.gz.z02` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-linux-x86_64.tar.gz.z02) |
+| `zed-linux-x86_64.tar.gz.zip` | 35.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-linux-x86_64.tar.gz.zip) |
 <!-- RELEASES_END -->
