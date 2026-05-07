@@ -1,1 +1,1 @@
-anyproto/anytype-tS
+anyproto/anytype-ts|Anytype.Setup
