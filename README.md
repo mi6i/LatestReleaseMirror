@@ -157,63 +157,17 @@ sha256sum FILE_NAME
 
 
 <!-- RELEASES_START -->
-<div id="gfw-knocker--mahsang"></div>
+<div id="anyproto--anytype-ts"></div>
 
-### GFW-knocker--MahsaNG
+### anyproto--anytype-ts
 
-🔗 [source](https://github.com/GFW-knocker/MahsaNG) – [<code><small>v15-(1405-1-22)</small></code>](https://github.com/GFW-knocker/MahsaNG/releases/tag/v15-(1405-1-22))
-
-| File | Size | Download |
-|------|------|----------|
-| `MahsaNG_15_arm64-v8a.apk` | 51.7 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_arm64-v8a.apk) |
-| `MahsaNG_15_armeabi-v7a.apk` | 52.3 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_armeabi-v7a.apk) |
-| `MahsaNG_15_x86.apk` | 55.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_x86.apk) |
-| `MahsaNG_15_x86_64.apk` | 54.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/GFW-knocker/MahsaNG/MahsaNG_15_x86_64.apk) |
-
----
-
-<div id="muntashirakon--appmanager"></div>
-
-### MuntashirAkon--AppManager
-
-🔗 [source](https://github.com/MuntashirAkon/AppManager) – [<code><small>v4.0.5</small></code>](https://github.com/MuntashirAkon/AppManager/releases/tag/v4.0.5)
+🔗 [source](https://github.com/anyproto/anytype-ts) – [<code><small>v0.55.4</small></code>](https://github.com/anyproto/anytype-ts/releases/tag/v0.55.4)
 
 | File | Size | Download |
 |------|------|----------|
-| `AppManager_v4.0.5.apk` | 25.7 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/MuntashirAkon/AppManager/AppManager_v4.0.5.apk) |
-| `AppManager_v4.0.5.apks` | 22.4 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/MuntashirAkon/AppManager/AppManager_v4.0.5.apks) |
-
----
-
-<div id="nullroute1970--stormdns"></div>
-
-### nullroute1970--StormDNS
-
-🔗 [source](https://github.com/nullroute1970/StormDNS) – [<code><small>v2026.04.26.153956-15aedd9</small></code>](https://github.com/nullroute1970/StormDNS/releases/tag/v2026.04.26.153956-15aedd9)
-
-| File | Size | Download |
-|------|------|----------|
-| `StormDNS_Client_Linux_AMD64.tar.gz` | 3.5 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Linux_AMD64.tar.gz) |
-| `StormDNS_Client_Linux_AMD64.zip` | 3.5 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Linux_AMD64.zip) |
-| `StormDNS_Client_Windows_AMD64.zip` | 3.9 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Windows_AMD64.zip) |
-| `StormDNS_Client_Windows_X86.zip` | 3.8 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Client_Windows_X86.zip) |
-| `StormDNS_Server_Linux_AMD64.tar.gz` | 3.2 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Linux_AMD64.tar.gz) |
-| `StormDNS_Server_Linux_AMD64.zip` | 3.2 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Linux_AMD64.zip) |
-| `StormDNS_Server_Windows_AMD64.zip` | 3.6 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Windows_AMD64.zip) |
-| `StormDNS_Server_Windows_X86.zip` | 3.5 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/nullroute1970/StormDNS/StormDNS_Server_Windows_X86.zip) |
-
----
-
-<div id="zed-industries--zed"></div>
-
-### zed-industries--zed
-
-🔗 [source](https://github.com/zed-industries/zed) – [<code><small>v1.1.6</small></code>](https://github.com/zed-industries/zed/releases/tag/v1.1.6)
-
-| File | Size | Download |
-|------|------|----------|
-| `Zed-x86_64.exe` | 77.7 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/Zed-x86_64.exe) |
-| `zed-linux-x86_64.tar.gz.z01` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-linux-x86_64.tar.gz.z01) |
-| `zed-linux-x86_64.tar.gz.z02` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-linux-x86_64.tar.gz.z02) |
-| `zed-linux-x86_64.tar.gz.zip` | 35.1 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/zed-industries/zed/zed-linux-x86_64.tar.gz.zip) |
+| `Anytype.Setup.0.55.4.exe.z01` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/anyproto/anytype-ts/Anytype.Setup.0.55.4.exe.z01) |
+| `Anytype.Setup.0.55.4.exe.z02` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/anyproto/anytype-ts/Anytype.Setup.0.55.4.exe.z02) |
+| `Anytype.Setup.0.55.4.exe.z03` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/anyproto/anytype-ts/Anytype.Setup.0.55.4.exe.z03) |
+| `Anytype.Setup.0.55.4.exe.z04` | 50.0 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/anyproto/anytype-ts/Anytype.Setup.0.55.4.exe.z04) |
+| `Anytype.Setup.0.55.4.exe.zip` | 3.6 MB | [⬇️ Download](https://raw.githubusercontent.com/mi6i/LatestReleaseMirror/main/releases/anyproto/anytype-ts/Anytype.Setup.0.55.4.exe.zip) |
 <!-- RELEASES_END -->
