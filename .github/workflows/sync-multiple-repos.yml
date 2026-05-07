@@ -1,8 +1,6 @@
 name: Sync latest releases & update README
 
 on:
-  # schedule:
-  #   - cron: '0 */12 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -72,12 +70,12 @@ jobs:
             done
           done
 
-          # Commit all deletions in one commit (clean and safe)
+          # Commit all deletions in one commit
           git add -A
           git diff --staged --quiet || git commit -m "Cleanup: remove orphaned repos and mismatched assets"
           git push || echo "Push failed (maybe nothing to push)"
 
-      # -------------------- SYNC RELEASES --------------------
+      # -------------------- SYNC RELEASES (WITH SPLIT FOR LARGE FILES) --------------------
       - name: Sync releases
         run: |
           set -e
@@ -88,6 +86,11 @@ jobs:
           if [ ! -f repos.txt ]; then
             echo "ERROR: repos.txt not found."
             exit 1
+          fi
+
+          # Ensure zip is available
+          if ! command -v zip &>/dev/null; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq zip
           fi
 
           grep -v '^#' repos.txt | grep -v '^[[:space:]]*$' | while IFS='|' read -r repo_path filter_pattern; do
@@ -115,7 +118,6 @@ jobs:
             status="stable"
             [[ "$prerelease" == "true" ]] && status="prerelease"
 
-            # Check stored version and filter
             current_version=""
             if [ -f "$target_dir/.version" ]; then
               current_version=$(cat "$target_dir/.version")
@@ -125,22 +127,30 @@ jobs:
               stored_filter=$(cat "$target_dir/.filter")
             fi
 
-            # Force re-download if filter changed OR version changed
             if [ "$current_version" != "$tag" ] || [ "$stored_filter" != "$filter_pattern" ]; then
               echo "  New release: $tag (previous: $current_version) or filter changed"
-              # Delete all assets except .version and .filter (they will be overwritten)
               find "$target_dir" -type f ! -name '.version' ! -name '.filter' -delete 2>/dev/null || true
 
-              echo "  Downloading matching assets (skipping >100 MB)..."
+              echo "  Downloading matching assets (files >100 MB will be split into 50 MB parts)..."
               while read -r url; do
                 filename=$(basename "$url")
                 size=$(curl -sL -I "$url" | grep -i content-length | tail -1 | awk '{print $2}' | tr -d '\r')
-                if [ -n "$size" ] && [ "$size" -gt 104857600 ]; then
-                  echo "    SKIP $filename – $size bytes (>100 MB)"
-                  continue
-                fi
-                echo "    Downloading $filename"
+                echo "    Downloading $filename ($([ -n "$size" ] && echo "$size bytes" || echo "unknown size"))"
                 wget -q --show-progress "$url" -P "$target_dir"
+
+                # Split if larger than 100 MB
+                if [ -f "$target_dir/$filename" ]; then
+                  file_size=$(stat -c%s "$target_dir/$filename" 2>/dev/null || stat -f%z "$target_dir/$filename" 2>/dev/null)
+                  if [ -n "$file_size" ] && [ "$file_size" -gt 104857600 ]; then
+                    echo "    📦 Splitting $filename (${file_size} bytes) into 50 MB parts..."
+                    (
+                      cd "$target_dir"
+                      zip -r -q -s 50m "${filename}.zip" "$filename"
+                      rm "$filename"
+                      echo "    ✅ Split into $(ls ${filename}.zip* 2>/dev/null | wc -l) parts"
+                    )
+                  fi
+                fi
               done < <(curl -s "https://api.github.com/repos/$repo_path/releases/tags/$tag" \
                 | jq -r --arg pat "$filter_pattern" '.assets[].browser_download_url | select(test($pat; "i"))')
 
@@ -169,21 +179,18 @@ jobs:
       # -------------------- UPDATE README --------------------
       - name: Update README between markers
         run: |
-          # If README.md does not exist, create it from docs/README.fa.md
           if [ ! -f README.md ]; then
             if [ ! -f docs/README.fa.md ]; then
               echo "ERROR: docs/README.fa.md not found – cannot create README.md"
               exit 1
             fi
             cp docs/README.fa.md README.md
-            # Ensure markers exist (add them if missing)
             if ! grep -q "<!-- RELEASES_START -->" README.md; then
               printf '\n<!-- RELEASES_START -->\n' >> README.md
               printf '<!-- RELEASES_END -->\n' >> README.md
             fi
           fi
 
-          # Ensure markers exist (also for existing README.md)
           if ! grep -q "<!-- RELEASES_START -->" README.md; then
             printf '\n<!-- RELEASES_START -->\n' >> README.md
             printf '<!-- RELEASES_END -->\n' >> README.md
