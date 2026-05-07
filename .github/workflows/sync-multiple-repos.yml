@@ -29,7 +29,8 @@ jobs:
           declare -A EXPECTED_REPOS
           declare -A FILTERS
           while IFS='|' read -r repo_path filter_pattern; do
-            repo_path=$(echo "$repo_path" | xargs)
+            repo_path=$(echo "$repo_path" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+            filter_pattern=$(echo "$filter_pattern" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
             [[ -z "$repo_path" || "$repo_path" =~ ^# ]] && continue
             EXPECTED_REPOS["$repo_path"]=1
             FILTERS["$repo_path"]="$filter_pattern"
@@ -70,7 +71,7 @@ jobs:
       - name: Sync releases
         run: |
           set -e
-          set -x  # چاپ دستورات برای دیباگ
+          set -x  # نمایش دستورات برای دیباگ
 
           git pull --rebase origin HEAD
 
@@ -84,9 +85,13 @@ jobs:
             sudo apt-get update -qq && sudo apt-get install -y -qq zip
           fi
 
-          grep -v '^#' repos.txt | grep -v '^[[:space:]]*$' | while IFS='|' read -r repo_path filter_pattern; do
-            repo_path=$(echo "$repo_path" | xargs)
-            filter_pattern=$(echo "$filter_pattern" | xargs)
+          while IFS='|' read -r repo_path_raw filter_pattern_raw; do
+            # حذف فضای خالی بدون خراب کردن بک‌اسلش‌ها
+            repo_path=$(echo "$repo_path_raw" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+            filter_pattern=$(echo "$filter_pattern_raw" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+            
+            # رد کردن خطوط کامنت و خالی
+            [[ -z "$repo_path" || "$repo_path" =~ ^# ]] && continue
 
             echo "========================================="
             echo "Repo: $repo_path"
@@ -118,12 +123,12 @@ jobs:
               echo "  🆕 New release: $tag (was: $current_version) or filter changed"
               find "$target_dir" -type f ! -name '.version' ! -name '.filter' -delete 2>/dev/null || true
 
-              # گرفتن لیست URLهای assetها با jq
+              # دریافت لیست URLهای assetها با jq و فیلتر
               assets_urls=$(curl -s "https://api.github.com/repos/$repo_path/releases/tags/$tag" \
-                | jq -r --arg pat "$filter_pattern" '.assets[].browser_download_url | select(test($pat; "i"))')
+                | jq -r --arg pat "$filter_pattern" '.assets[]?.browser_download_url // empty | select(test($pat; "i"))')
 
               if [ -z "$assets_urls" ]; then
-                echo "  ⚠️ No assets matched the filter. Check repos.txt or release assets."
+                echo "  ⚠️ No assets matched filter. Check repos.txt or release assets."
               fi
 
               while read -r url; do
@@ -149,7 +154,6 @@ jobs:
                 fi
               done <<< "$assets_urls"
 
-              # ذخیره متادیتا
               echo "$tag" > "$target_dir/.version"
               echo "$filter_pattern" > "$target_dir/.filter"
 
@@ -167,7 +171,7 @@ jobs:
             else
               echo "  Already up to date and filter unchanged: $tag"
             fi
-          done
+          done < repos.txt
 
           git push
           echo "All updates pushed."
@@ -175,7 +179,6 @@ jobs:
       # -------------------- UPDATE README --------------------
       - name: Update README
         run: |
-          # همان کد قبلی (بدون تغییر)
           if [ ! -f README.md ]; then
             if [ ! -f docs/README.fa.md ]; then
               echo "ERROR: docs/README.fa.md not found – cannot create README.md"
